@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/task2">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="6dp"
+        app:cardCornerRadius="6dp"
+        android:background="#e8f8ff"
+        app:cardBackgroundColor="#e8f8ff">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:background="@drawable/circle"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="25dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/Time"
+                android:fontFamily="@font/nunito_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task"
+                android:layout_toRightOf="@+id/Time"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp"
+                android:id="@+id/task"
+                android:fontFamily="@font/nunito_bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/task"
+                android:layout_toRightOf="@id/Time"
+                android:layout_marginLeft="20dp"
+                android:text="DATE"
+                android:layout_marginTop="10dp"
+                android:textSize="15dp"
+                android:id="@+id/date"
+                android:fontFamily="@font/nunito_bold"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/remind"
+                android:layout_toRightOf="@+id/task"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="35dp"
+                android:visibility="gone"
+                android:id="@+id/alarm"/>
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

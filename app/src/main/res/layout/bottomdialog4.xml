@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f8ff">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DRINK TIME"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:id="@+id/drinktime"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_below="@id/drinktime"
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Amount of water in ml"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:inputType="number"
+        android:id="@+id/numml"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numml"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="DATE"
+        android:textSize="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:id="@+id/setwdate" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numml"
+        android:layout_toRightOf="@+id/setwdate"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Set Date"
+        android:padding="10dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nunito_black"
+        android:id="@+id/getwdate"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setwdate"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:text="TIME"
+        android:textSize="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:id="@+id/setwtime" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/setwdate"
+        android:layout_toRightOf="@+id/setwtime"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Set Date"
+        android:padding="10dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nunito_black"
+        android:id="@+id/getwtime"/>
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/setwtime"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/mybutton"
+        android:text="SET REMAINDER"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/nunito_black"
+        android:id="@+id/setwremaind"
+        android:layout_marginBottom="40dp"/>
+</RelativeLayout>

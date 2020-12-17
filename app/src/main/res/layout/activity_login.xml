@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context=".Splashscreen">
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:layout_above="@+id/LoginCard"
+        android:layout_marginBottom="30dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/back_button_login"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back_button"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                ></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Health-E"
+                android:layout_marginBottom="10dp"
+                android:textSize="50dp"
+                android:textColor="#FFF"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:fontFamily="@font/nunito_bolditalic">
+
+            </TextView>
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_header"></ImageView>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/LoginCard"
+        android:background="@drawable/bg"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#2B2B2B"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito_bold"
+            android:text="Welcome Back" >
+        </TextView>
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:hint="Username"
+            android:fontFamily="@font/nunito_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="34dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/edt1">
+        </EditText>
+        <EditText
+            android:background="@drawable/bg_edittext"
+            android:hint="Password"
+            android:fontFamily="@font/nunito_bold"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:id="@+id/edt2">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#00FFFFFF"
+            android:textColor="#918B8B"
+            android:padding="10dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_bold"
+            android:id="@+id/changepass">
+
+        </Button>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mybutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="#FFF"
+            android:id="@+id/btn"></Button>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#1862f5"
+        android:id="@+id/toolbar"
+        app:titleTextColor="#ffffff"
+        app:subtitleTextColor="#ffffff"
+        android:fontFamily="@font/nunito_bold"
+        />
+
+</RelativeLayout>

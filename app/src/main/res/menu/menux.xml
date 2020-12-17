@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+   <group android:checkableBehavior="single">
+       <item android:title="@string/my_profile"
+           android:icon="@drawable/ic_profile"
+           android:id="@+id/Mprofile"
+           android:fontFamily="@font/nunito_bold"/>
+       <item android:title="@string/billing_history"
+           android:icon="@drawable/history"
+           android:id="@+id/history"
+           android:fontFamily="@font/nunito_bold"/>
+       <item android:title="Delete My Account"
+           android:icon="@drawable/delete"
+           android:id="@+id/delete"
+           android:fontFamily="@font/nunito_bold"/>
+       <item android:title="@string/sign_out"
+           android:icon="@drawable/logout"
+           android:id="@+id/signout"
+           android:fontFamily="@font/nunito_bold"/>
+   </group>
+</menu>

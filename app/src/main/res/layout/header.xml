@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="270dp"
+    android:background="@drawable/headerbg"
+    android:id="@+id/header">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/log"
+        android:layout_marginTop="50dp"
+        android:id="@+id/head"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Health-E User"
+        android:textSize="30dp"
+        android:fontFamily="@font/nunito_black"
+        android:textColor="#1843f5"
+        android:layout_below="@id/head"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>

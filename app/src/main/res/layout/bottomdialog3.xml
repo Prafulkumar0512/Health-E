@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f8ff">
+
+    <Spinner
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/billlist"
+        android:paddingLeft="20dp"
+        />
+    <EditText
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:hint="Bill-Amount"
+        android:layout_below="@+id/billlist"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bg_edittext"
+        android:paddingLeft="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:inputType="number"
+        android:id="@+id/billamount"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/billamount"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:text="Reminder-Date"
+        android:textColor="#008000"
+        android:fontFamily="@font/nunito_black"
+        android:textSize="20dp"
+        android:id="@+id/textrdate"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Date"
+        android:padding="10dp"
+        android:background="@drawable/mybutton"
+        android:layout_toRightOf="@+id/textrdate"
+        android:layout_below="@+id/billamount"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:fontFamily="@font/nunito_black"
+        android:textColor="#ffffff"
+        android:id="@+id/setdate1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reminder-Time"
+        android:textColor="#008000"
+        android:fontFamily="@font/nunito_black"
+        android:textSize="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/setdate1"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/rtime"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nunito_black"
+        android:layout_below="@id/setdate1"
+        android:layout_toRightOf="@id/rtime"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/mybutton"
+        android:text="Set Time"
+        android:id="@+id/srtime"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill Due Date"
+        android:textColor="#ff0000"
+        android:fontFamily="@font/nunito_black"
+        android:layout_below="@+id/rtime"
+        android:textSize="20dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/textddate"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:text="Set Date"
+        android:textColor="#ffffff"
+        android:padding="10dp"
+        android:layout_toRightOf="@id/textddate"
+        android:layout_below="@+id/rtime"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nunito_black"
+        android:id="@+id/setdate2"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bill-Month"
+        android:fontFamily="@font/nunito_black"
+        android:textSize="20dp"
+        android:textColor="#1843f5"
+        android:layout_below="@+id/textddate"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/textmonth"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:text="Set Month"
+        android:fontFamily="@font/nunito_black"
+        android:padding="10dp"
+        android:textColor="#ffffff"
+        android:id="@+id/setmonth"
+        android:layout_toRightOf="@+id/textmonth"
+        android:layout_below="@+id/textddate"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mybutton"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/setdate2"
+        android:layout_marginTop="90dp"
+        android:text="Add Reminder"
+        android:fontFamily="@font/nunito_black"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffff"
+        android:id="@+id/submit"/>
+
+
+
+</RelativeLayout>

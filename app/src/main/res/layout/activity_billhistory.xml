@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<HorizontalScrollView android:id="@+id/scrollPartition"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".billhistory"
+        android:stretchColumns="1,2,3,4"
+        android:layout_margin="10dp">
+        <TableRow android:background="#1843f5">
+            <TextView
+                android:width="150dp"
+                android:text="Month/Year"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/nunito_black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <TextView
+                android:width="150dp"
+                android:text="Bill"
+                android:textSize="15dp"
+                android:fontFamily="@font/nunito_black"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_column="1"
+                android:padding="10dp"/>
+            <TextView
+                android:width="150dp"
+                android:text="Amount"
+                android:textSize="15dp"
+                android:fontFamily="@font/nunito_black"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:padding="10dp"
+                android:layout_column="1"/>
+            <TextView
+                android:width="150dp"
+                android:text="Paid Date"
+                android:textSize="15dp"
+                android:fontFamily="@font/nunito_black"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="#ffffff"
+                android:layout_column="1"/>
+
+        </TableRow>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/tablelist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"/>
+    </TableLayout>
+</HorizontalScrollView>

@@ -1,0 +1,18 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Appname</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="sign_out" android:fontFamily="@font/nunito_bold">Sign-out</string>
+    <string name="delete_all" android:fontFamily="@font/nunito_bold">Delete-All</string>
+    <string name="analysis" android:fontFamily="@font/nunito_bold">Analysis</string>
+    <string name="billing_history" android:fontFamily="@font/nunito_bold">Billing History</string>
+    <string name="my_profile" android:fontFamily="@font/nunito_bold">My Profile</string>
+    <string name="expense" android:fontFamily="@font/nunito_bold">Expenses Added</string>
+    <string name="task" android:fontFamily="@font/nunito_bold">Task Added</string>
+    <string name="register" android:fontFamily="@font/nunito_bold">User Registered Successfully Please goto Login page</string>
+    <string name="Login" android:fontFamily="@font/nunito_bold">Login Successful</string>
+    <string name="invalid" android:fontFamily="@font/nunito_bold">Invalid Username or Password</string>
+    <string name="delete" android:fontFamily="@font/nunito_bold">Deleted</string>
+    <string name="delete1" android:fontFamily="@font/nunito_bold">Deleted</string>
+    <string name="update" android:fontFamily="@font/nunito_bold">Updated</string>
+</resources>

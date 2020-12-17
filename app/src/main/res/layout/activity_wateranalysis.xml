@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            tools:context=".wateranalysis">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="650dp"
+                android:layout_height="650dp"
+                android:layout_margin="10dp"
+                android:id="@+id/billchart1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/billchart1"
+                android:id="@+id/billm1"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/nunito_black"
+                android:textColor="#1843f5"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/billm1"
+                android:fontFamily="@font/nunito_black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#F60000"
+                android:id="@+id/mbax1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/mbax1"
+                android:fontFamily="@font/nunito_black"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/minbill1"
+                android:textColor="#8BC34A"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/billm1"
+                android:layout_toRightOf="@id/mbax1"
+                android:fontFamily="@font/nunito_black"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:id="@+id/avgbill1"
+                android:textColor="#FFC107"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2196F3"
+                android:layout_below="@+id/avgbill1"
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/mbax1"
+                android:fontFamily="@font/nunito_black"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/sum1"/>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+
+</ScrollView>

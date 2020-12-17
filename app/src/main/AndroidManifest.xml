@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.loginpge">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/log"
+        android:label="Health-E"
+        android:roundIcon="@mipmap/log"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:label">
+        <activity android:name=".wateranalysis"
+            android:label="Water Analysis"
+            android:parentActivityName=".wateranalysis"></activity>
+        <activity
+            android:name=".waterremainder"
+            android:label="Water Drinking Remainder"
+            android:parentActivityName=".waterremainder" />
+        <activity
+            android:name=".Billanalysis"
+            android:label="Bill Analysis"
+            android:parentActivityName=".Billanalysis" />
+        <activity
+            android:name=".Expensesanalysis"
+            android:label="Expense Analysis"
+            android:parentActivityName=".Expensesanalysis" />
+        <activity
+            android:name=".Graph"
+            android:label="Analysis List"
+            android:parentActivityName=".Graph" />
+        <activity
+            android:name=".billhistory"
+            android:label="Bill Payment History"
+            android:parentActivityName=".billhistory" />
+        <activity
+            android:name=".billreminder"
+            android:label="Bill Payment Reminders"
+            android:parentActivityName=".billreminder" />
+        <activity
+            android:name=".Profile"
+            android:label="My Profile"
+            android:parentActivityName=".Profile" />
+
+        <activity
+            android:name=".Todopge"
+            android:label="Add Schedule"
+            android:parentActivityName=".Todopge" />
+        <activity
+            android:name=".Updateexpensepg"
+            android:label="Update Expense"
+            android:parentActivityName=".Updateexpensepg" />
+        <activity
+            android:name=".Expensepge"
+            android:label="Expenses History"
+            android:parentActivityName=".Expensepge" />
+        <activity
+            android:name=".Dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splashscreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Loginpge"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Welcomepg"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <receiver
+            android:name=".Alarmmanager.Alarmreciever"
+            android:directBootAware="true"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="restartservice" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".Alarmmanager.Ringtone"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Alarmmanager.AlarmReciever1"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Todopge"
+    android:id="@+id/Mainactivity2"
+    android:background="#ffffff">
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/float2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_baseline_add_24"
+        />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:id="@+id/recycleview1"/>
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/task"
+        android:layout_centerInParent="true"
+        android:id="@+id/emptyview1"
+        android:alpha="0.9"
+        android:visibility="gone" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Task Added Today"
+        android:layout_below="@id/emptyview1"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:visibility="gone"
+        android:id="@+id/emtext"
+        android:fontFamily="@font/nunito_blackitalic"/>
+
+</RelativeLayout>

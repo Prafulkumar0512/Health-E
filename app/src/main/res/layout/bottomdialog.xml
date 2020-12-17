@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f8ff"
+    android:id="@+id/bottom">
+    <EditText
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:hint="Item name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/edtx1"
+        android:background="@drawable/bg_edittext"
+        android:fontFamily="@font/nunito_bold"
+        android:paddingLeft="20dp"/>
+    <EditText
+        android:layout_width="370dp"
+        android:layout_height="50dp"
+        android:fontFamily="@font/nunito_bold"
+        android:background="@drawable/bg_edittext"
+        android:hint="Amount"
+        android:layout_below="@+id/edtx1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/edtx2"
+        android:inputType="number"
+        android:paddingLeft="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtx2"
+        android:text="Date"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:id="@+id/date1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Date"
+        android:layout_toRightOf="@+id/date1"
+        android:layout_below="@id/edtx2"
+        android:layout_marginLeft="20dp"
+        android:textColor="#ffffff"
+        android:fontFamily="@font/nunito_bold"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/mybutton"
+        android:id="@+id/setd1"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Add Transaction"
+        android:textColor="#ffffff"
+        android:background="@drawable/mybutton"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/adtrans"
+        android:fontFamily="@font/nunito_bold"/>
+
+</RelativeLayout>
